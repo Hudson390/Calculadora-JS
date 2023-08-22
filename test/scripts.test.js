@@ -27,7 +27,7 @@ describe('Função calcular()', () => {
     // Chame a função calcular
     calcular();
 
-    // Verifique se a mensagem "Nada para calcular" foi exibida.
+    // Verifique se a mensagem "Nada para calcular" foi exibida
     expect(document.getElementById('resultado').innerHTML).toBe('Nada para calcular');
   });
 });
