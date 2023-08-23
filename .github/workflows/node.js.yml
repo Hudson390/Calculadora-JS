@@ -21,6 +21,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Grant execute permission to jest
+    - run: chmod +x path/to/jest
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
