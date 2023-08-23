@@ -24,7 +24,7 @@ describe('Função calcular()', () => {
     // Defina o valor do elemento #resultado como vazio
     document.getElementById('resultado').innerHTML = '';
 
-    // Chame a função calcular
+    // Chame a função calcular 
     calcular();
 
     // Verifique se a mensagem "Nada para calcular" foi exibida.
