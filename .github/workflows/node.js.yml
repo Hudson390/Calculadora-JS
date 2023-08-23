@@ -21,16 +21,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
+    - run: chmod +x path/to/jest
     - run: npm run build --if-present
     - run: npm test
-    - run: |
-        git config --global user.email "hudsoncdiniz@gmail.com"
-        git config --global user.name "Hudson390"
-        echo "machine github.com login ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
-        npm run deploy # ou o comando que você usa para fazer o deploy
+    #- run: |
+       # git config --global user.email "hudsoncdiniz@gmail.com"
+       # git config --global user.name "Hudson390"
+        #echo "machine github.com login ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
+        #npm run deploy # ou o comando que você usa para fazer o deploy
