@@ -4,8 +4,7 @@
   "description": "<h1 align=\"center\"> Calculadora com HTML, CSS e JavaScript </h1>",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/jest/bin/jest.js",
-    "build": "npm run build --if-present"
+    "test": "node node_modules/jest/bin/jest.js"
   },
   "jest": {
     "transform": {
