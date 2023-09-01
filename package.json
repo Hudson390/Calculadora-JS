@@ -2,7 +2,7 @@
   "name": "calculadora-js",
   "version": "1.0.0",
   "description": "<h1 align=\"center\"> Calculadora com HTML, CSS e JavaScript </h1>",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "node node_modules/jest/bin/jest.js"
   },
